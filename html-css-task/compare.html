@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+     crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+         body {
+            margin: 10px;
+            padding: 10px;
+        }
+        header{                     
+            display: flex;
+            margin-left: 25px;
+            margin-right: 25px;
+            margin-top: 25px;
+            width: 100%;
+
+        }
+        .logologo
+        {
+            flex:1;
+        }
+      
+       
+        .anchor
+        {
+            flex:10;
+            padding: 10px;
+            margin:10px;
+            margin-left: 0px;
+            text-align: center;
+            list-style: none;
+     
+            font-size: 16px;
+            color:black;
+        }
+        .searchengine
+        {
+           margin-top: 20px;
+           flex:9;
+           text-align: center;
+           margin-right: 0px;
+           padding: 10px;
+        }
+        i{
+           padding: 4px;
+        }
+        ul
+        {
+           display: flex;
+        }
+        li{
+            flex:1;
+            text-decoration: none;
+            list-style: none;           
+
+        }
+        li a
+        {
+            text-decoration: none;
+            color: black;
+        }
+        a:hover 
+        {
+             color: darkgreen;
+             font-size: 25px;
+             background-color: orange;
+             
+        }
+        input
+         {
+                height: 20px;
+                border-radius: 5px;
+                text-decoration: none;
+               
+                text-align: center;
+                border: none;
+         }
+         button
+         {
+                border-radius: 18px;
+        }
+        /* compare page */
+       
+        section{
+            margin: 10px;
+            position: relative;
+            top: 20px;
+            bottom: 20px;
+            left: 20px;
+            right: 20px;
+            
+        }
+        /* table
+        {
+            width: 100%;
+        } */
+        .compare1
+        {
+            margin:10px;
+            padding:10px;
+            background-color: #EDEDED ;
+            font-size: 13px;
+
+        }
+        .secondrow
+        {
+            display :flex;
+            border:     2px solid #EDEDED;
+            margin: 10px;
+        }
+        .firstcolumn
+        {
+            flex: 2;
+            text-align: center;
+            line-height: 100px;
+            margin: 5px;
+          
+            border:  solid #EDEDED;
+        }
+        .secondcolumn
+        {
+          
+            flex: 3;
+            margin: 5px;
+            border:  solid #EDEDED;
+        }
+        .thirdsolumn
+        {  border:1px solid ;
+            flex: 3;
+            margin: 5px;
+            border:  solid #EDEDED;
+           
+        }
+        .fourcolumn
+        { border:1px solid ;
+            flex: 3;
+            margin: 5px;
+            border:  solid #EDEDED;
+
+        }
+      
+        /* table
+        {
+            margin: 0px;
+            padding: 10px;         
+
+        } */
+        th{
+            border:  solid #EDEDED;
+        }
+        td{
+            text-align: center;
+            border:  solid #EDEDED
+        }
+        .stock
+        {
+            color: green;
+        }
+        .namess
+        {
+            color:green; 
+        }
+        .buttonbutton
+        {
+            color: green;
+        }
+        
+        /* footer page */
+        .footerone
+         {
+            background-color: #ADCCC5;
+            border: 2px black;
+            display: flex;
+            margin: 10px;
+            
+         }
+        .fonee
+        {
+            flex: 1;
+            margin: 10px;
+            line-height: 50px;             
+            text-align: center;
+            
+          
+        }
+        .ftwo
+        {
+            flex: 1;
+            margin: 10px;
+            padding: 10px;
+            text-align: center;
+        }
+        .fthree
+        {
+            flex: 1;
+            margin: 10px;
+            padding: 10px;
+            line-height: 50px;
+            text-align: center;
+        }
+        /* button{
+            background-color: black;
+            color: whitesmoke;
+        } */
+        /* footer second row */
+        .srow
+        {
+            display: flex;   
+            margin: 10px;             
+         }
+        .sone
+        {
+            flex: 4;
+            margin-left: 20px;
+            text-align: left;
+            padding: 10px;
+            margin: 10px;
+        }
+       
+        .paymet
+        {
+          
+            height: 60%;         
+            text-align: center;
+            line-height: 50%;
+        }
+        .stwo
+        {
+            flex: 3;
+            text-align: left;
+            margin-left: 10px;
+            padding-left: 20px;
+            font-size: 18px;
+        }
+        
+        .sthree
+        {
+            flex: 3;
+            text-align: left;
+            margin-left: 10px;
+            padding-left: 20px;      
+            font-size: 18px;
+        }
+        
+        .sfour
+        {            
+            flex: 3;
+            text-align: left;
+            margin-left: 10px;
+            padding-left: 20px;
+            font-size: 18px;
+        }
+        /* three row footer */
+        .tfooter
+        {
+            display: flex;      
+        }      
+        .rone
+        {
+            flex: 1;
+            text-align: left;          
+        }
+        .rtwo
+        {
+            line-height: 40px;
+            flex:1;
+            text-align:right;
+        }
+        .fone
+        {
+            height: 10px;
+            text-align: center;
+           
+        }  
+        .paymet
+        {
+           
+            height: 30%;         
+            text-align: center;
+        }   
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logologo">
+            <img src="logo.png" height="100px" width="100px">
+        </div>
+        <div class="anchor">
+            <ul>
+           <li> <a href="D:\achivers\task\html-css-task\homepage.html">Home</a></li>
+            <li><a href="D:\achivers\task\html-css-task\Shop.html">Shop</a></li>
+                <li><a href="D:\achivers\task\html-css-task\my-Account.html">My Account</a></li>
+                    <li><a href="D:\achivers\task\html-css-task\compare.html">Compare</a></li>
+                        <li><a href="D:\achivers\task\html-css-task\login.html">Login</a></li>
+                </ul>
+        </div>
+        <div class="searchengine">
+            <form class="example" action="action_page.php">
+                <button>
+                <input type="text" placeholder="Search for items.." name="search">
+                <i class="fa fa-search"></i>
+            </button>
+               
+                 <i class="fa-regular fa-heart"></i>
+               
+                <i class="fa-solid fa-bag-shopping"></i>
+               
+            </form>
+        </div>
+    </header>
+    <!-- compare page -->
+    <section>
+        <div class="compare1">
+            <p> Home  >  Shop >  Compare</p>
+    </section>
+   
+        <section>
+            <table style="width: 100%;">
+                <!-- .images
+                {
+                    height: 200px;
+                    width: 370px;
+                    margin: 10px;
+                } -->
+                <tr class="images">
+                    <th>Image</th>
+                    <th><img src="product-2-1.jpg" height="200px" width="370px"></th>
+                    <th><img src="category-7.jpg" height="200px" width="370px"></th>
+                    <th><img src="product-7-1.jpg" height="200px" width="370px"></th>
+                </tr>
+                <tr class="namess">
+                    <td>Name</td>
+                    <td>Plain Striola Shirts</td>
+                    <td>Chen Cardigan</td>
+                    <td>Henley Shirt</td>
+                </tr>
+                <tr>
+                    <td>Price</td>
+                    <td>$35</td>
+                    <td>$67</td>
+                    <td>$24</td>
+                </tr>
+                <tr>
+                    <td>Description</td>
+                    <td><p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p><p>Omnis perferendis nam,fuga reciendis libero</p><p>doloremque distinctio</p></td>
+                    <td><p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p><p>Omnis perferendis nam,fuga reciendis libero</p><p>doloremque distinctio</p></td>
+                    <td><p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p><p>Omnis perferendis nam,fuga reciendis libero</p><p>doloremque distinctio</p></td>
+                </tr>
+                <tr>
+                    <td>color</td>
+                    <td><i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle"></i></td>
+                    <td><i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle"></i></td>
+                    <td><i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle"></i></td>
+                </tr>
+                <tr class="stock">
+                    <td>Stocks</td>
+                    <td>Out of stock</td>
+                    <td>Out of stock</td>
+                    <td>Out of stock</td>
+                </tr>
+                <tr>
+                    <td>Weight</td>
+                    <td>150gram</td>
+                    <td>150gram</td>
+                    <td>150gram</td>
+                </tr>
+                <tr>
+                    <td>Dimensions</td>
+                    <td>N/A</td>
+                    <td>N/A</td>
+                    <td>N/A<td>
+                </tr>
+                <tr class="buttonbutton">
+                    <td>Buy</td>
+                    <td ><button type="submit">Add to cart</button></td>
+                    <td ><button type="submit">Add to cart</button></td>
+                    <td ><button type="submit">Add to cart</button></td>
+                </tr>
+                <tr>
+                    <td>Remove</td>
+                    <td><i class="fa-solid fa-trash"></i></td>
+                    <td><i class="fa-solid fa-trash"></i></td>
+                    <td><i class="fa-solid fa-trash"></i><td>
+                </tr>
+                
+            </table>
+
+        </setion>
+        <!-- footer -->
+        <footer>
+            <section class="footerone">
+             <!-- footer first row -->
+             <div class="fonee">
+                 
+                     <img src="icon-email.svg" height="40px" width="40px">
+                     Sign in to Newsletter
+             </div>
+             <div class="ftwo">
+                 <p>... and receive $25 coupon for first shoping.</p>
+             </div>
+             <div class="fthree">
+                 <form>
+                     <input type="text" placeholder="Enter Your Email" name="email">             
+                     <button style="color: blue;" type="button">Subscribe</button>                 
+                 </form>          
+             </div>
+             </section>
+             <!-- second row -->
+             <section class="srow">
+             <div class="sone">
+                 <img src="logo.png" alt="logo">
+                 <p><b>Contact</b></p>
+                 <p><b>Address:</b>13 Tlemcen Road,Street 32,Beb-Wahren</p>
+                 <p><b>Phone:</b>+01 2222 365/(+91)0123456789</p>
+                 <p><b>Hours:</b>10:00-18:00,Mon-Sat</p>
+                 <p><b>Follow Me</b></p>
+                 <p class="footerlogo">
+                 <i class="fa-brands fa-facebook"></i>
+                 <i class="fa-brands fa-twitter"></i>
+                 <i class="fa-brands fa-instagram"></i>
+                 <i class="fa-brands fa-pinterest-p"></i>
+                 <i class="fa-brands fa-youtube"></i>
+                 </p>
+             </div>
+             <div class="stwo">
+                 <p><b>Address</b></p>
+                 <p>About Us</p>
+                 <p>Delivery Information</p>
+                 <p>Privacy Policy</p>
+                 <p>Terms&Conditions</p>
+                 <p>Contact Us</p>
+                 <p>Support Center</p>
+             </div>
+             <div class="sthree">
+                 <p><b>My Account</b></p>
+                 <p>Sign In</p>
+                 <p>View Cart</p>
+                 <p>My Wishlist</p>
+                 <p>Track My Order</p>
+                 <P>Help</P>
+                 <p>Order</p>
+             </div>
+             <div class="sfour">
+                 <p><b>Secured Payment Gateway</b></p>
+                 <div class="payment">
+                     <img src="payment-method.png">
+                 </div>      
+              </div>
+         </section>
+     
+         <!-- third row footer -->
+         <!-- horizontal line -->
+         <hr width="100%" size="2">
+          <div class="tfooter">       
+             <div class="rone">
+                 <p>                
+                 <i class="fa-regular fa-copyright"></i>
+                 2024 YOKESHWARAN. All right reserved
+                 </p>
+             </div>
+             <div class="rtwo">
+                 <p>
+                 Designer by YOKESHWARAN D
+                 </p>
+             </div>
+          </div>
+          </footer>    
+</body>
+</html>
